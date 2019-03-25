@@ -20,7 +20,12 @@
 
         <ul>
           <li ng-repeat="item in todos track by $index">
-            {{item}}
+           <div>
+             {{item}}
+           </div>
+           <div>
+             <button ng-click="removerItem(item)">Excluir</button>
+           </div>
           </li>
         </ul>
         <input type="text" placeholder="Adicionar Item" ng-model="novoItem"/>

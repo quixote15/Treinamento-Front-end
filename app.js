@@ -7,9 +7,12 @@ angular.module('trelloApp', [])
 
     $scope.novoItem = '';
 
-
     $scope.adicionarItem = function (value){
         $scope.todos.push(value);
     }
-    
+
+    $scope.removerItem = function(value){
+        $scope.todos.splice(value,1);
+    }
+
   }])
