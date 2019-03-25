@@ -23,8 +23,8 @@
             {{item}}
           </li>
         </ul>
-        <input type="text" placeholder="Adicionar Item" />
-        <button>Adicionar</button>
+        <input type="text" placeholder="Adicionar Item" ng-model="novoItem"/>
+        <button ng-click="adicionarItem(novoItem)">Adicionar</button>
       </div>
 
       <div class="doing">

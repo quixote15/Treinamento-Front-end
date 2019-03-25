@@ -5,5 +5,11 @@ angular.module('trelloApp', [])
 
     $scope.todos = ["Aprender Framework", "Fazer café", "Iniciar projeto"];
 
+    $scope.novoItem = '';
 
+
+    $scope.adicionarItem = function (value){
+        $scope.todos.push(value);
+    }
+    
   }])
