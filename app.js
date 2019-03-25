@@ -3,7 +3,13 @@ angular.module('trelloApp', [])
 .controller('TrelloController',['$scope', function($scope) {
     $scope.title = 'Trello';
 
-    $scope.todos = ["Aprender Framework", "Fazer café", "Iniciar projeto"];
+    $scope.todoFilter = 'todo'
+
+    $scope.todos = [
+        {text:"Aprender Framework", status: 'todo'},
+        {text:"Fazer café", status: 'todo'},
+        {text: "Iniciar projeto", status: 'done'}
+    ];
 
     $scope.novoItem = '';
 

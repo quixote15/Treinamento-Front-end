@@ -19,9 +19,9 @@
         <h2>To Do</h2>
 
         <ul>
-          <li ng-repeat="item in todos track by $index">
+          <li ng-repeat="item in todos  | filter: {status: todoFilter}">
            <div>
-             {{item}}
+             {{item.text}}
            </div>
            <div>
              <button ng-click="removerItem(item)">Excluir</button>

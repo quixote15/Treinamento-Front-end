@@ -10,7 +10,9 @@ var inputToDoElement = document.querySelector(".to-do input");
 var buttonToDoElement = document.querySelector(".to-do button");
 //conextada ao <button> dentro do elemento com a classe .to-do
 
-var toDos = ["Aprender Framework", "Fazer café", "Iniciar projeto"];
+var toDos = [
+  {text:"Aprender Framework", status: 'todo'},
+  {text:"Fazer café", status: ''}, "Iniciar projeto"];
 /*
 Array que nos permite guardar todas as strings que representam nossas tarefas.
 Cada espaço do array é uma tarefa diferente.
